@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Fora</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 22px;
+            text-align: center;
+
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar {
+            position: relative;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 3px 45px;
+            text-decoration: none;
+            color:black;
+        }
+
+        #navbar ul li a:hover {
+            color: red;
+        }
+
+        #btn {
+            display: inline-block;
+
+            margin-top: 8.6px;
+            padding: 5px 5px;
+            margin-left: 500px;
+            background-color: rgb(12, 12, 12);
+            border: 2px solid white;
+            border-radius: 12px;
+            width: 120px;
+            color: aliceblue;
+        }
+
+        #btn:hover {
+            background-color: red;
+            color: black;
+        }
+
+        #Home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        #Home::before {
+            content: "";
+            background: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Technology-HD-Images.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        
+        .card{
+            padding:23px 12px;
+            margin: 10px;
+            border:2px solid red;
+            border-radius: 22px;
+            background-color: rgba(187, 52, 58, 0.3);
+            text-align: center;
+    
+        }
+        .card ul li{
+            list-style: none;
+        } 
+       
+
+        .box1{
+            margin: 10px;
+            border-radius: 22px;
+            align-items: center;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#">
+                    <h1>Campus Fora</h1>
+                </a></li>
+            <li class="item">
+                <h1>|</h1>
+            </li>
+            <li class="item"><a href="">
+                    <h1>Welcome to WebDev</h1>
+                </a></li>
+            <li><button id="btn"  onclick = "clicked()">Profile/Login</button></li>
+        </ul>
+    </nav>
+
+    <section id="Home">
+        <div class="container">
+            <div class="card" id="card-1"><h1>TITLE-WEB DEVELOPMENT</h1>
+            <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p></div>
+            <div class="card" id="card-2"><h1>TOP POINTS</h1>
+            <ul>
+                <li>Creation</li>
+                <li>Building</li>
+                <li>Maintenace of Website</li>
+                <li>Web Application</li>
+            </ul>
+        
+            </div>
+           <div class="box1">
+           <textarea name="box" id="" cols="30" rows="10" placeholder="type a comment"> COMMENTS</textarea>
+           </div>
+        </div>
+    </section>
+    <footer>
+        <h3>created by-VISHAL KUMAR(221201)</h3>
+        <h3>Email-vishalkmr22@iitk.ac.in</h3>
+    </footer>
+    <script>
+    function clicked()
+{
+    console.log('The button was clicked');
+}
+    </script>
+</body>
+
+</html>
